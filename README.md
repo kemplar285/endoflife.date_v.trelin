@@ -1,11 +1,15 @@
 # Kuehne+Nagel Take Home Assignment - Querying https://endoflife.date
 
 ## Description
-This small scripts queries a product from [endoflife.date](https://endoflife.date) API and saves the response to output-<PRODUCT_NAME>.csv file.\
-The default product is set to 'Windows', but a product can also be chosen manually by supplying a command line argument when running the script.\
+This small scripts queries a product from [endoflife.date](https://endoflife.date) API and saves the response to output-<PRODUCT_NAME>.csv file.  
 
-Python version used - 3.13.2\
-Dependencies are listed in requirements.txt\
+The default product is set to 'Windows', but a product can also be chosen manually by supplying a command line argument when running the script.  
+
+
+Python version used - 3.13.2  
+
+Dependencies are listed in requirements.txt  
+
 
 ## Installation
 ### Creating a Python virtual environment
@@ -42,9 +46,12 @@ Now you're good to go!
 
 ## Running the script
 
-You can now run the script. An argument can be supplied to query a product other than Windows, but it is optional.\
-This script will create a separate output file for each product.\
-IMPORTANT: New queries will overwrite the existing file.\
+You can now run the script. An argument can be supplied to query a product other than Windows, but it is optional.  
+
+This script will create a separate output file for each product.  
+
+IMPORTANT: New queries will overwrite the existing file.  
+
 
 ```
 python .\query.py <OPTIONAL_PRODUCT_ARGUMENT>

@@ -8,7 +8,7 @@ print(f"Query for product: {product}")
 endoflifeGetAllDetailsURL = f"https://endoflife.date/api/{product}.json"
 responseData = requests.get(endoflifeGetAllDetailsURL).json()
 
-# Saves response to csv file.
+# Saves response to csv file. Headers are enabled, indexing is disabled.
 fileName = f'output-{product}.csv'
 pandas.json_normalize(responseData).to_csv(fileName, mode='w', header=True, index=False)
 
